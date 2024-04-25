@@ -1,0 +1,35 @@
+
+package hitungluassegitiga;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author I Gede Andi Utama Giri 2201010101
+ */
+public class HitungLuasSegitiga {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Meminta input alas dari pengguna
+        System.out.print("Masukkan panjang alas segitiga: ");
+        double alas = scanner.nextDouble();
+
+        // Meminta input tinggi dari pengguna
+        System.out.print("Masukkan tinggi segitiga: ");
+        double tinggi = scanner.nextDouble();
+
+        // Menghitung luas segitiga
+        double luas = hitungLuasSegitiga(alas, tinggi);
+
+        // Menampilkan hasil
+        System.out.println("Luas segitiga adalah: " + luas);
+
+        scanner.close();
+    }
+
+    // Metode untuk menghitung luas segitiga
+    public static double hitungLuasSegitiga(double alas, double tinggi) {
+        return (alas * tinggi) / 2;
+    }
+}
